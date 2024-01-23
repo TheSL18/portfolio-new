@@ -1,0 +1,40 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "CyberSecurity Engineer − Condor Bussiness Solutions (Mexico, CDMX)",
+    description:
+      "Encargado de evaluar  riesgos, implementar medidas de seguridad, monitorear la seguridad, gestionar riesgos y dar respuesta a incidentes.",
+    link: "",
+  },
+  {
+    date: "Febrero 2023",
+    title: "Analista de CiberSeguridad L1  − NewNet S.A. (Colombia, Bogotá)",
+    description:
+      "Encargado de monitoreo de la seguridad, investigar incidentes, gestionar incidentes y dar respuesta de incidentes.",
+  },
+  {
+    date: "Noviembre 2020",
+    title: "Tecnico en sitio  − Soporte Caribe S.A. (Colombia, Bogotá)",
+    description:
+      "Encargado de instalacion y configuracion de hardware y sofware, mantenimiento preventivo y correctivo y soporte a usuarios.",
+  },
+  {
+    date: "Enero 2020",
+    title: "Auxiliar de inteligencia y contrainteligencia / Auxiliar de telematica y comunicaciones  − [Nombre Protegido] (Colombia, Bogotá)",
+    description:
+      "[Funciones Protegidas].",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
